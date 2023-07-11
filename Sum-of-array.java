@@ -1,12 +1,18 @@
-public class SumOfArray {  
-    public static void main(String[] args) {  
-        //Initialize array  
-        int [] arr = new int [] {1, 2, 3, 4, 5};  
-        int sum = 0;  
-        //Loop through the array to calculate sum of elements  
-        for (int i = 0; i < arr.length; i++) {  
-           sum = sum + arr[i];  
-        }  
-        System.out.println("Sum of all the elements of an array: " + sum);  
-    }  
-}  
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+	public static void main(String[] args) throws Exception
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		br.readLine();
+		int output=0;
+		String[] input = br.readLine().split(" ");
+		for(String value:input)
+		{
+			output += Integer.parseInt(value);
+		}
+		System.out.println(output);
+	}
+}
